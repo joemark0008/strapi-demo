@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipe_lists",
+  "info": {
+    "singularName": "recipe-list",
+    "pluralName": "recipe-lists",
+    "displayName": "Recipe List"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Expiration": {
+      "type": "date"
+    },
+    "Inventory": {
+      "type": "integer"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
